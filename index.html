@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keshav Shah | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background-color: #00acc1;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #00796b;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #80deea;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Keshav Shah</h1>
+    <p>Creative Designer | UI/UX Designer | Entrepreneur</p>
+  </header>
+  <img src="" alt="">
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Keshav Shah, a passionate designer, artist, and entrepreneur.  
+    I specialize in graphic design, social media, UI/UX, and tea branding.  
+    I also love traveling and creating documentary videos.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <div class="cards" id="skills"></div>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="cards" id="projects"></div>
+  </section>
+
+  <footer>
+    <p>Connect with me:</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Keshav Shah</p>
+  </footer>
+
+  <script>
+    const skills = [
+      "Graphic Design",
+      "UI/UX Design",
+      "Figma",
+      "Adobe Photoshop",
+      "Branding & Social Media",
+      "HTML, CSS, JavaScript",
+      "Video Editing",
+      "Digital Marketing",
+      "Tea Branding & Business",
+      "Photography"
+    ];
+
+    const projects = [
+      "Lochan Tea (Chai Patti Business)",
+      "NSS Social Media & Event Designs",
+      "Pizza UI Project",
+      "Giorgio Armani Perfume Designs",
+      "Delhi to Mumbai Cycle Ride Documentary",
+      "International Yoga Day & Coastal Cleanup Flyers"
+    ];
+
+    const skillsContainer = document.getElementById("skills");
+    skills.forEach(skill => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.textContent = skill;
+      skillsContainer.appendChild(div);
+    });
+
+    const projectsContainer = document.getElementById("projects");
+    projects.forEach(project => {
+      const div = document.createElement("div");
+      div.className = "card";
+      div.textContent = project;
+      projectsContainer.appendChild(div);
+    });
+  </script>
+</body>
+</html>
